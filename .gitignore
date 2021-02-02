@@ -2,3 +2,13 @@
 !.*
 *.swp
 .oh-my-zsh
+.viminfo
+.vmware
+.scala_history
+.steam
+.steampath
+.steampid
+.android
+.bash_history
+.doom.d
+
