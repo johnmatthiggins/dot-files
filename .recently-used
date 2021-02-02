@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecentFiles>
+  <RecentItem>
+    <URI>file:///home/johnmhiggins/source/TraxWeb/Traxxess/App.config</URI>
+    <Mime-Type>application/config+xml</Mime-Type>
+    <Timestamp>1605402133</Timestamp>
+    <Private>App.config [Traxxess]</Private>
+    <Groups>
+      <Group>MonoDevelop Files</Group>
+    </Groups>
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///home/johnmhiggins/source/TraxWeb/Traxxess/Controllers/AccountController.cs</URI>
+    <Mime-Type>text/x-csharp</Mime-Type>
+    <Timestamp>1605401871</Timestamp>
+    <Private>AccountController.cs [Traxxess]</Private>
+    <Groups>
+      <Group>MonoDevelop Files</Group>
+    </Groups>
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///home/johnmhiggins/source/TraxWeb/TraxWeb.sln</URI>
+    <Mime-Type>application/x-sln</Mime-Type>
+    <Timestamp>1605401737</Timestamp>
+    <Private>TraxWeb</Private>
+    <Groups>
+      <Group>MonoDevelop Projects</Group>
+    </Groups>
+  </RecentItem>
+</RecentFiles>

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/johnmhiggins/.git'
+let g:netrw_dirhist_7='/home/johnmhiggins/Desktop/cs_430/src/benchmarking'
+let g:netrw_dirhist_6='/home/johnmhiggins/.vim'
+let g:netrw_dirhist_5='/home/johnmhiggins'
+let g:netrw_dirhist_4='/home/johnmhiggins/Desktop/spr_2021/cs_312/ANSR_Project'
+let g:netrw_dirhist_3='/home/johnmhiggins/Desktop/spr_2021/cs_430/src/benchmarking/src/main/scala'
+let g:netrw_dirhist_2='/home/johnmhiggins/Desktop/spr_2021/cs_430/src/benchmarking'
+let g:netrw_dirhist_1='/home/johnmhiggins/src/functional/clojure/tutorials'
+let g:netrw_dirhist_0='/home/johnmhiggins/Desktop/spr_2021/cs_370/src/assignment_1'
+let g:netrw_dirhist_9='/home/johnmhiggins/Desktop/Spring_2021/cs_312/CIRT_Project'

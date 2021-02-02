@@ -1,0 +1,5 @@
+set -o vi
+
+PS1=$'\n'"[\$0-]\${PWD}"$'\n'$"> "
+
+[[ $TERM != "screen" ]] && exec tmux
