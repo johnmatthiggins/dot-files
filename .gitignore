@@ -1,9 +1,1 @@
 *
-!.gitignore
-!.mkshrc
-!install.sh
-!.bashrc
-!.tmux.conf
-!.mkusb
-!.condarc
-!./.config/kitty/
