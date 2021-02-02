@@ -1,4 +1,5 @@
 *
+!.gitignore
 !.mkshrc
 !install.sh
 !.bashrc
