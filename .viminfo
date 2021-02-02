@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1612308019,,"q"
+|2,0,1612308175,,"q"
 :w
-|2,0,1612307994,,"w"
+|2,0,1612308175,,"w"
 :"w
 |2,0,1612249250,,"\"w"
 :W
@@ -230,38 +230,38 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 	
-|3,1,0,1,1,0,1612308018,""
-"1	LINE	0
+|3,0,0,1,1,0,1612308018,""
+""1	LINE	0
 	
-|3,0,1,1,1,0,1612249241,""
+|3,1,1,1,1,0,1612308165,""
 "2	LINE	0
-	c;
-	wdd
-|3,0,2,1,2,0,1612249133,"c;","wdd"
+	.git
+|3,0,2,1,1,0,1612308028,".git"
 "3	LINE	0
 	
-|3,0,3,1,1,0,1612240553,""
+|3,0,3,1,1,0,1612249241,""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1612240553,""
+	c;
+	wdd
+|3,0,4,1,2,0,1612249133,"c;","wdd"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1612239985,""
+|3,0,5,1,1,0,1612240553,""
 "6	LINE	0
+	
+|3,0,6,1,1,0,1612240553,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1612239985,""
+"8	LINE	0
 	alias py = 'python3'
 	export py
-|3,0,6,1,2,0,1612239983,"alias py = 'python3'","export py"
-"7	LINE	0
-	    companies = requests.get(companies_api_url + '/' + companies_api_url)
-|3,0,7,1,1,0,1612238758,"    companies = requests.get(companies_api_url + '/' + companies_api_url)"
-"8	LINE	0
-	    username = 'nephilimnefario@gmail.com'
-|3,0,8,1,1,0,1612238575,"    username = 'nephilimnefario@gmail.com'"
+|3,0,8,1,2,0,1612239983,"alias py = 'python3'","export py"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1612235437,""
+	    companies = requests.get(companies_api_url + '/' + companies_api_url)
+|3,0,9,1,1,0,1612238758,"    companies = requests.get(companies_api_url + '/' + companies_api_url)"
 "k	CHAR	0
 	j
 |3,0,20,0,1,0,1602816472,"j"
@@ -275,28 +275,34 @@ $
 # File marks:
 'M  6  0  ~/Desktop/CSIS_310/source/PhoneNumber/PhoneNumber.java
 |4,77,6,0,1598668962,"~/Desktop/CSIS_310/source/PhoneNumber/PhoneNumber.java"
-'0  8  0  ~/.git
-|4,48,8,0,1612308019,"~/.git"
-'1  2  2  ~/.gitignore
-|4,49,2,2,1612307995,"~/.gitignore"
-'2  1  0  ~/.gitignore
-|4,50,1,0,1612307965,"~/.gitignore"
-'3  1  0  ~/.gitignore
-|4,51,1,0,1612307965,"~/.gitignore"
-'4  8  0  ~/Desktop/cs_430/src/benchmarking
-|4,52,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
-'5  16  0  ~/Desktop/cs_430/src/benchmarking
-|4,53,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
-'6  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,54,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
-'7  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,55,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
-'8  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,56,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
-'9  3  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,57,3,0,1612299589,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+'0  3  4  ~/.gitignore
+|4,48,3,4,1612308175,"~/.gitignore"
+'1  8  0  ~/.git
+|4,49,8,0,1612308019,"~/.git"
+'2  2  2  ~/.gitignore
+|4,50,2,2,1612307995,"~/.gitignore"
+'3  2  2  ~/.gitignore
+|4,51,2,2,1612307995,"~/.gitignore"
+'4  1  0  ~/.gitignore
+|4,52,1,0,1612307965,"~/.gitignore"
+'5  1  0  ~/.gitignore
+|4,53,1,0,1612307965,"~/.gitignore"
+'6  1  0  ~/.gitignore
+|4,54,1,0,1612307965,"~/.gitignore"
+'7  1  0  ~/.gitignore
+|4,55,1,0,1612307965,"~/.gitignore"
+'8  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,56,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+'9  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,57,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
 
 # Jumplist (newest first):
+-'  3  4  ~/.gitignore
+|4,39,3,4,1612308175,"~/.gitignore"
+-'  2  0  ~/.gitignore
+|4,39,2,0,1612308022,"~/.gitignore"
+-'  8  0  ~/.git
+|4,39,8,0,1612308019,"~/.git"
 -'  8  0  ~/.git
 |4,39,8,0,1612308019,"~/.git"
 -'  2  2  ~/.gitignore
@@ -308,6 +314,8 @@ $
 -'  1  0  ~/.gitignore
 |4,39,1,0,1612307981,"~/.gitignore"
 -'  1  0  ~/.gitignore
+|4,39,1,0,1612307981,"~/.gitignore"
+-'  1  0  ~/.gitignore
 |4,39,1,0,1612307965,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1612307965,"~/.gitignore"
@@ -327,6 +335,38 @@ $
 |4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
 -'  8  0  ~/Desktop/cs_430/src/benchmarking
 |4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  8  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,8,0,1612299894,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
+-'  16  0  ~/Desktop/cs_430/src/benchmarking
+|4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
 -'  16  0  ~/Desktop/cs_430/src/benchmarking
 |4,39,16,0,1612299867,"~/Desktop/cs_430/src/benchmarking"
 -'  16  0  ~/Desktop/cs_430/src/benchmarking
@@ -407,104 +447,70 @@ $
 |4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
 -'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
 |4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  0  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,0,1612299646,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
--'  4  6  ~/Desktop/cs_430/src/benchmarking/.gitignore
-|4,39,4,6,1612299625,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
+-'  5  8  ~/Desktop/cs_430/src/benchmarking/.gitignore
+|4,39,5,8,1612299664,"~/Desktop/cs_430/src/benchmarking/.gitignore"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1612307994	0
-	"	2	2
-	^	2	3
-	.	2	2
+	*	1612308175	0
+	"	3	4
+	^	3	5
+	.	3	4
 	+	1	1
-	+	2	2
+	+	2	3
+	+	4	0
+	+	4	10
+	+	5	0
+	+	3	4
 
 > ~/Desktop/cs_430/src/benchmarking/.gitignore
 	*	1612299664	0
