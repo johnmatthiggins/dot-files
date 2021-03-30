@@ -24,7 +24,6 @@ endif
 
 set background=light
 let &t_ut=''
-let g:airline_theme='base16_gruvbox_dark_hard'
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -46,7 +45,8 @@ endif
 
 command Dspace %s/\s\+$//e
 
-set shell=/bin/bash
+set backspace=2
+set shell=/bin/zsh
 set number
 set relativenumber
 set autoindent
@@ -62,17 +62,15 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=/usr/share/vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugins brought to you by Vundle^TM
 Bundle 'bfrg/vim-cpp-modern'
-Bundle 'ctrlpvim/ctrlpvim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'VundleVim/Vundle.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'vim-airline/vim-airline'
-Bundle 'OmniSharp/omnisharp-vim'
 Bundle 'arcticicestudio/nord-vim'
 Bundle 'vim-airline/vim-airline-themes'
 
@@ -80,4 +78,4 @@ call vundle#end()
 filetype plugin indent on
 filetype plugin on
 
-colorscheme peachpuff
+colorscheme nord
