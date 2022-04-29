@@ -71,11 +71,10 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'VundleVim/Vundle.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'vim-airline/vim-airline'
-Bundle 'arcticicestudio/nord-vim'
 Bundle 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
 
-colorscheme nord
+colorscheme peachpuff
