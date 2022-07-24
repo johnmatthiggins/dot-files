@@ -1,7 +1,6 @@
-[credential]
-	helper = store
-[user]
-	email = gjsczink@gmail.com
-	name = jhiggs
 [core]
-	editor = vim
+    editor = vim
+
+[alias]
+    st = status
+    ci = commit
