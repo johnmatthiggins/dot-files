@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=light
+set background=dark
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -46,8 +46,8 @@ endif
 command Dspace %s/\s\+$//e
 
 set backspace=2
-set shell=/bin/zsh
-set number
+set shell=/usr/bin/fish
+" set number
 set relativenumber
 set autoindent
 set tabstop=8 
@@ -58,6 +58,9 @@ set smarttab
 set nowrap
 set tags=.tags
 
+set list
+set listchars=eol:¬,tab:>-
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -67,14 +70,17 @@ call vundle#begin()
 
 " Plugins brought to you by Vundle^TM
 Bundle 'bfrg/vim-cpp-modern'
+Bundle 'junegunn/fzf.vim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'VundleVim/Vundle.vim'
+Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
+Bundle 'tpope/vim-vinegar'
 
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
 
-colorscheme peachpuff
+colorscheme gruvbox
