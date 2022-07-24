@@ -46,7 +46,7 @@ endif
 command Dspace %s/\s\+$//e
 
 set backspace=2
-set shell=/usr/bin/fish
+set shell=/usr/bin/mksh
 " set number
 set relativenumber
 set autoindent
