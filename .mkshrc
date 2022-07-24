@@ -1,5 +1,22 @@
+
+# set vim bindings
 set -o vi
 
-PS1=$'\n'"[\$0-]\${PWD}"$'\n'$"> "
+# PROMPT SECTION
+pwd_tilde() {
+    if [[ "${PWD#$HOME}" != "$PWD" ]] then
+        echo "~${PWD#$HOME}"
+    else
+        echo "$PWD"
+    fi
+}
 
-[[ $TERM != "screen" ]] && exec tmux
+PS1='[$(whoami)@$(hostname) $(pwd_tilde)]$ '
+
+# $PATH SETTINGS
+export PATH="$PATH:/opt/homebrew/bin/"
+
+# ALIASES
+alias la='ls -a'
+alias ll='ls -l'
+alias l='ls'
