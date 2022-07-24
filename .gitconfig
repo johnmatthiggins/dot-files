@@ -4,3 +4,10 @@
 [alias]
     st = status
     ci = commit
+    co = checkout
+    br = branch
+    wt = worktree
+
+[user]
+    email = johnmatthiggins@gmail.com
+    name = John Higgins
