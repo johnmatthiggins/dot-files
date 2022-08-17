@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=dark
+set background=light
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -83,4 +83,4 @@ call vundle#end()
 filetype plugin indent on
 filetype plugin on
 
-colorscheme gruvbox
+colorscheme default
