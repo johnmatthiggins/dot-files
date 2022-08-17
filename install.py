@@ -69,13 +69,12 @@ class Logger:
 
     # Configure color based on logging level.
     def level_ansi(self, level):
-        match level:
-            case Logger.INFO_LEVEL:
-                return f'[\033[32mINFO{self.reset_color()}]'
-            case Logger.WARN_LEVEL:
-                return f'[\033[33mWARN{self.reset_color()}]'
-            case Logger.ERROR_LEVEL:
-                return f'[\033[31mERROR{self.reset_color()}]'
+        if level == Logger.INFO_LEVEL:
+            return f'[\033[32mINFO{self.reset_color()}]'
+        elif level == Logger.WARN_LEVEL:
+            return f'[\033[33mWARN{self.reset_color()}]'
+        else:
+            return f'[\033[31mERROR{self.reset_color()}]'
 
 
 if __name__ == '__main__':
