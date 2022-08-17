@@ -6,6 +6,7 @@ DESCRIPTION: Installs dot files when creating a fresh Linux install.
 AUTHOR: John Higgins
 '''
 
+import sys
 import os
 from os import path
 import subprocess as sp
@@ -19,6 +20,7 @@ BLACKLIST = [
 def main():
     logger = Logger()
     logger.log(Logger.INFO_LEVEL, 'STARTING INSTALLATION...')
+    force = sys.argv[1] == '--force' or sys.argv[1] == '-f'
 
     home_dir = os.getenv('HOME')
     cwd = os.getcwd()
@@ -28,19 +30,24 @@ def main():
     sources = [path.join(cwd, f) for f in files]
 
     for i in range(0, len(files)):
-        link(sources[i], home_paths[i])
+        link(sources[i], home_paths[i], force)
 
     logger.log(Logger.INFO_LEVEL, 'COMPLETED INSTALLATION!')
 
 
 def ignore(file_name):
-    return file_name in BLACKLIST
+    return file_name in BLACKLIST or not file_name.index('.') == 0
 
 
 # create a symlink.
-def link(source, destination):
+def link(source, destination, force=False):
     logger = Logger()
-    proc = sp.run(args=['ln', '-s', source, destination], stdout=sp.PIPE, stderr=sp.PIPE)
+    proc = None
+
+    if force:
+        proc = sp.run(args=['ln', '-sf', source, destination], stdout=sp.PIPE, stderr=sp.PIPE)
+    else:
+        proc = sp.run(args=['ln', '-s', source, destination], stdout=sp.PIPE, stderr=sp.PIPE)
 
     if proc.returncode == 0:
         logger.log(Logger.INFO_LEVEL, 'LINKED \'%s\' → \'%s\'' %(source, destination))
