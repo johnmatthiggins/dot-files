@@ -15,6 +15,8 @@ PS1='[$(whoami)@$(hostname) $(pwd_tilde)]$ '
 # $PATH SETTINGS
 export PATH="$PATH:/opt/homebrew/bin/"
 
+export MAN_POSIXLY_CORRECT=1
+
 # ALIASES
 alias la='ls -a'
 alias ll='ls -l'
