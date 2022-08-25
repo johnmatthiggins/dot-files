@@ -14,7 +14,6 @@ PS1="[$(printf '\e[35m')$(whoami)@$(hostname)$(printf '\e[0m') $(printf '\e[34m'
 
 # $PATH SETTINGS
 export PATH="$PATH:/opt/homebrew/bin/:$HOME/dotnet"
-
 export MAN_POSIXLY_CORRECT=1
 
 # ALIASES
@@ -22,3 +21,4 @@ alias la='ls -a'
 alias ll='ls -l'
 alias l='ls'
 alias dn='dotnet'
+alias zyp='sudo zypper'
