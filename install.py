@@ -11,26 +11,30 @@ import os
 from os import path
 import subprocess as sp
 
-BLACKLIST = [
-    'install.py',
-    '.gitignore',
-    'README.md'
-]
+DOT_DIR='dot/'
 
 def main():
     logger = Logger()
     logger.log(Logger.INFO_LEVEL, 'STARTING INSTALLATION...')
-    force = sys.argv[1] == '--force' or sys.argv[1] == '-f'
+    force = False
+
+    if len(sys.argv) > 1:
+        force = sys.argv[1] == '--force' or sys.argv[1] == '-f'
 
     home_dir = os.getenv('HOME')
     cwd = os.getcwd()
+    dots = path.join(cwd, DOT_DIR)
 
-    files = [f for f in os.listdir() if path.isfile(f) and not ignore(f)]
-    home_paths = [path.join(home_dir, f) for f in files]
-    sources = [path.join(cwd, f) for f in files]
+    dot_paths = [path.join(dots, f) for f in os.listdir(dots)]
+    dot_dest = [path.join(home_dir, path.basename(d)) for d in os.listdir(dots)]
 
-    for i in range(0, len(files)):
-        link(sources[i], home_paths[i], force)
+    print("DESTINATIONS")
+    print(dot_dest)
+    print("SOURCES")
+    print(dot_paths)
+
+    for i in range(0, len(dots)):
+        link(dot_paths[i], dot_dest[i], force)
 
     logger.log(Logger.INFO_LEVEL, 'COMPLETED INSTALLATION!')
 
