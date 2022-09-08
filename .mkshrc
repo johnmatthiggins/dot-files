@@ -10,7 +10,11 @@ pwd_tilde() {
     fi
 }
 
-PS1="[$(printf '\e[32m')$(whoami)@$(hostname)$(printf '\e[0m') $(printf '\e[34m')"'$(pwd_tilde)'"$(printf '\e[0m')]$ "
+if [[ "$(uname)" == "Darwin" ]] then
+    PS1="[$(whoami)@$(hostname) "'$(pwd_tilde)'"]$ "
+else
+    PS1="[$(printf '\e[32m')$(whoami)@$(hostname)$(printf '\e[0m') $(printf '\e[34m')"'$(pwd_tilde)'"$(printf '\e[0m')]$ "
+fi
 
 # $PATH SETTINGS
 export PATH="$PATH:/opt/homebrew/bin/:$HOME/dotnet:$HOME/bin"
