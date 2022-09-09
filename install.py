@@ -28,19 +28,10 @@ def main():
     dot_paths = [path.join(dots, f) for f in os.listdir(dots)]
     dot_dest = [path.join(home_dir, path.basename(d)) for d in os.listdir(dots)]
 
-    print("DESTINATIONS")
-    print(dot_dest)
-    print("SOURCES")
-    print(dot_paths)
-
-    for i in range(0, len(dots)):
+    for i in range(0, len(dot_dest)):
         link(dot_paths[i], dot_dest[i], force)
 
     logger.log(Logger.INFO_LEVEL, 'COMPLETED INSTALLATION!')
-
-
-def ignore(file_name):
-    return file_name in BLACKLIST or not file_name.index('.') == 0
 
 
 # create a symlink.
