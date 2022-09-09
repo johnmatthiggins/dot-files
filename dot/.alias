@@ -1,0 +1,6 @@
+alias la='ls -a'
+alias ll='ls -l'
+alias l='ls'
+alias dn='dotnet'
+alias zyp='sudo zypper'
+alias open='xdg-open'
