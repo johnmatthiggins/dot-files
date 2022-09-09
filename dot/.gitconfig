@@ -4,6 +4,9 @@
 [diff]
     tool = vimdiff
 
+[pull]
+    rebase = false
+
 [merge]
     tool = vimdiff
 
