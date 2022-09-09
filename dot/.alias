@@ -1,6 +1,18 @@
-alias la='ls -a'
-alias ll='ls -l'
-alias l='ls'
+# make sure our EXA shell command exists.
+if [[ "$(command -v exa)" == "" ]] then
+    alias la='ls -a'
+    alias ll='ls -l'
+    alias l='ls'
+else
+    alias ls='exa'
+    alias la='exa -a'
+    alias ll='exa -l'
+    alias l='exa'
+fi
+
+# alias la='ls -a'
+# alias ll='ls -l'
+# alias l='ls'
 alias dn='dotnet'
 alias zyp='sudo zypper'
 alias open='xdg-open'
