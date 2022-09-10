@@ -26,3 +26,4 @@ PATH="$HOME/.local/bin:$PATH"
 export EDITOR='vi'
 
 [[ $TERM != "screen" ]] && exec tmux
+. "$HOME/.cargo/env"
