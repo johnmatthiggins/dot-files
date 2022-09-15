@@ -10,10 +10,13 @@ function pwd_tilde {
     fi
 }
 
+setopt promptsubst
+local dir='$(pwd_tilde)'
+
 if [[ "$(uname)" == "Darwin" ]] then
-    PS1="[$(whoami)@$(hostname) "'$(pwd_tilde)'"]$ "
+    PS1="[$(whoami)@$(hostname) $dir]$ "
 else
-    PS1="[$(printf '\e[32m')$(whoami)@$(hostname)$(printf '\e[0m') $(printf '\e[34m')""$(pwd_tilde)""$(printf '\e[0m')]$ "
+    PS1="[$(printf '\e[32m')$(whoami)@$(hostname)$(printf '\e[0m') $(printf '\e[34m')""$dir""$(printf '\e[0m')]$ "
 fi
 
 export MAN_POSIXLY_CORRECT=1
