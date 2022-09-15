@@ -1,5 +1,6 @@
 # set vim bindings
 bindkey -v
+setopt promptsubst
 
 # PROMPT SECTION
 function pwd_tilde {
@@ -10,7 +11,6 @@ function pwd_tilde {
     fi
 }
 
-setopt promptsubst
 local dir='$(pwd_tilde)'
 
 if [[ "$(uname)" == "Darwin" ]] then
