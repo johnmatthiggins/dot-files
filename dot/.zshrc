@@ -1,3 +1,5 @@
+
+
 # set vim bindings
 bindkey -v
 setopt promptsubst
@@ -19,8 +21,6 @@ if [[ "$(uname)" == "Darwin" ]] then
 else
     PS1="[$(printf '\e[31m')$day_time$(printf '\e[0m')] $(printf '\e[34m')""$dir"" $(printf '\e[0m')$(printf '\e[32m')$ $(printf '\e[0m')"
 fi
-
-export MAN_POSIXLY_CORRECT=1
 
 if [[ -f ~/.env ]]; then
     source ~/.env
