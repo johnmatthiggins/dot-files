@@ -12,11 +12,12 @@ function pwd_tilde {
 }
 
 local dir='$(pwd_tilde)'
+local day_time='$(date +%R)'
 
 if [[ "$(uname)" == "Darwin" ]] then
     PS1="[$(whoami)@$(hostname) $dir]$ "
 else
-    PS1="[$(printf '\e[32m')$(whoami)@$(hostname)$(printf '\e[0m') $(printf '\e[34m')""$dir""$(printf '\e[0m')]$ "
+    PS1="[$(printf '\e[31m')$day_time$(printf '\e[0m')] $(printf '\e[34m')""$dir""$(printf '\e[0m') $ "
 fi
 
 export MAN_POSIXLY_CORRECT=1
