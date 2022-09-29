@@ -1,13 +1,13 @@
-#                      /$$                          
-#                     | $$                          
+#                      /$$
+#                     | $$
 #  /$$$$$$$$  /$$$$$$$| $$$$$$$   /$$$$$$   /$$$$$$$
 # |____ /$$/ /$$_____/| $$__  $$ /$$__  $$ /$$_____/
-#    /$$$$/ |  $$$$$$ | $$  \ $$| $$  \__/| $$      
-#   /$$__/   \____  $$| $$  | $$| $$      | $$      
+#    /$$$$/ |  $$$$$$ | $$  \ $$| $$  \__/| $$
+#   /$$__/   \____  $$| $$  | $$| $$      | $$
 #  /$$$$$$$$ /$$$$$$$/| $$  | $$| $$      |  $$$$$$$
 # |________/|_______/ |__/  |__/|__/       \_______/
 
-# set vim bindings
+# Set vim bindings
 bindkey -v
 setopt promptsubst
 
@@ -26,7 +26,7 @@ local day_time='$(date +%R)'
 if [[ "$(uname)" == "Darwin" ]] then
     PS1="[$day_time$] ""$dir"" ""$ "
 else
-    PS1="[$(printf '\e[31m')$day_time$(printf '\e[0m')] $(printf '\e[34m')""$dir"" $(printf '\e[0m')$(printf '\e[32m')$""$(printf '\e[0m') "
+    PS1="[$(printf '\e[31m')$day_time$(printf '\e[0m')] $(printf '\e[34m')""$dir"" $(printf '\e[0m')$(printf '\e[32m')$""$(printf '\e[0m') ";
 fi
 
 if [[ -f ~/.env ]]; then
