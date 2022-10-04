@@ -2,6 +2,7 @@ font:
   normal:
     family: Hack
     style: Regular
+  size: 14.0
 
 colors:
   name: 3024 (dark)
