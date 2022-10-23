@@ -1,34 +1,52 @@
 font:
   normal:
-    family: Hack
+    family: Iosevka
     style: Regular
-  size: 14.0
+  size: 15.0
 
+# Colors (Doom One)
 colors:
-  name: 3024 (dark)
-  author: Chris Kempson
+  # Default colors
   primary:
-    background: "#090300"
-    foreground: "#a5a2a2"
-  cursor:
-    text: "#090300"
-    cursor: "#a5a2a2"
+    background: '0x282c34'
+    foreground: '0xbbc2cf'
+
+  # Normal colors
   normal:
-    black: "#090300"
-    red: "#db2d20"
-    green: "#01a252"
-    yellow: "#fded02"
-    blue: "#01a0e4"
-    magenta: "#a16a94"
-    cyan: "#b5e4f4"
-    white: "#a5a2a2"
-  bright:
-    black: "#5c5855"
-    red: "#db2d20"
-    green: "#01a252"
-    yellow: "#fded02"
-    blue: "#01a0e4"
-    magenta: "#a16a94"
-    cyan: "#b5e4f4"
-    white: "#f7f7f7"
+    black:   '0x282c34'
+    red:     '0xff6c6b'
+    green:   '0x98be65'
+    yellow:  '0xecbe7b'
+    blue:    '0x51afef'
+    magenta: '0xc678dd'
+    cyan:    '0x46d9ff'
+    white:   '0xbbc2cf'
+
+# colors:
+#   name: 3024 (dark)
+#   author: Chris Kempson
+#   primary:
+#     background: "#090300"
+#     foreground: "#a5a2a2"
+#   cursor:
+#     text: "#090300"
+#     cursor: "#a5a2a2"
+#   normal:
+#     black: "#090300"
+#     red: "#db2d20"
+#     green: "#01a252"
+#     yellow: "#fded02"
+#     blue: "#01a0e4"
+#     magenta: "#a16a94"
+#     cyan: "#b5e4f4"
+#     white: "#a5a2a2"
+#   bright:
+#     black: "#5c5855"
+#     red: "#db2d20"
+#     green: "#01a252"
+#     yellow: "#fded02"
+#     blue: "#01a0e4"
+#     magenta: "#a16a94"
+#     cyan: "#b5e4f4"
+#     white: "#f7f7f7"
 
