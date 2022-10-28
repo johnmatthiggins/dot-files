@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=light
+set background=dark
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -59,7 +59,7 @@ set nowrap
 set tags=.tags
 
 set list
-set listchars=eol:¬,tab:>-
+set listchars=eol:¬
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
