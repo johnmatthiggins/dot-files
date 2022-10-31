@@ -20,13 +20,24 @@ function pwd_tilde {
     fi
 }
 
+function ssh_host {
+    if [[ -n "$SSH_CLIENT" || -n "$SSH_TTY" ]]; then
+        echo -n "($HOST) "
+    else
+        echo -n
+    fi
+}
+
 local dir='$(pwd_tilde)'
 local day_time='$(date +%R)'
+local host_name='$(ssh_host)'
 
 if [[ "$(uname)" == "Darwin" ]] then
     PS1="[$day_time] ""$dir"" ""$ "
 else
-    PS1="[%{$(printf '\e[31m')%}$day_time%{$(printf '\e[0m')%}] %{$(printf '\e[34m')%}""$dir"" %{$(printf '\e[32m')%}$""%{$(printf '\e[0m')%} ";
+    # prints like this: [21:01] ~/repos $
+    # prints like this when in SSH: (t460s) [21:01] ~/repos $
+    PS1="$host_name""[%{$(printf '\e[31m')%}$day_time%{$(printf '\e[0m')%}] %{$(printf '\e[34m')%}""$dir"" %{$(printf '\e[32m')%}$""%{$(printf '\e[0m')%} ";
 fi
 
 if [[ -f ~/.env ]]; then
