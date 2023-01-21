@@ -33,7 +33,7 @@ local day_time='$(date +%R)'
 local host_name='$(ssh_host)'
 
 if [[ "$(uname)" == "Darwin" ]] then
-    PS1="($host_name)""[$day_time$] ""$dir"" ""$ "
+    PS1="[$day_time] ""$dir"" ""$ "
 else
     # prints like this: [21:01] ~/repos $
     # prints like this when in SSH: (t460s) [21:01] ~/repos $
