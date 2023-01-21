@@ -40,6 +40,8 @@ else
     PS1="$host_name""[%{$(printf '\e[31m')%}$day_time%{$(printf '\e[0m')%}] %{$(printf '\e[34m')%}""$dir"" %{$(printf '\e[32m')%}$""%{$(printf '\e[0m')%} ";
 fi
 
+export PATH="$PATH:/home/jhiggins/.local/share/coursier/bin"
+
 if [[ -f ~/.env ]]; then
     source ~/.env
 fi

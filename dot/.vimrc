@@ -59,7 +59,7 @@ set nowrap
 set tags=.tags
 
 set list
-set listchars=eol:¬
+set listchars=eol:¬,tab:--
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
