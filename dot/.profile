@@ -27,3 +27,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 . "$HOME/.cargo/env"
+
+# >>> coursier install directory >>>
+export PATH="$PATH:/home/jhiggins/.local/share/coursier/bin"
+# <<< coursier install directory <<<
