@@ -13,3 +13,5 @@ fi
 alias dn='dotnet'
 alias zyp='sudo zypper'
 alias open='xdg-open'
+alias tabvi='vim -p'
+alias tabvim='vim -p'
