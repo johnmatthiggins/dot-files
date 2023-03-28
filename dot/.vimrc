@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=dark
+set background=light
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -46,7 +46,7 @@ endif
 command Dspace %s/\s\+$//e
 
 set backspace=2
-set shell=/usr/bin/mksh
+set shell=/usr/bin/zsh
 " set number
 set relativenumber
 set autoindent
