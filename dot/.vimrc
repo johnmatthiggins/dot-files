@@ -46,7 +46,7 @@ endif
 command Dspace %s/\s\+$//e
 
 set backspace=2
-set shell=/usr/bin/zsh
+set shell=/bin/zsh
 " set number
 set relativenumber
 set autoindent
@@ -66,20 +66,16 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-" Plugins brought to you by Vundle^TM
-Bundle 'bfrg/vim-cpp-modern'
-Bundle 'junegunn/fzf.vim'
-Bundle 'tpope/vim-fireplace'
-Bundle 'VundleVim/Vundle.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-commentary'
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-Bundle 'tpope/vim-vinegar'
+Plug 'junegunn/fzf.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-vinegar'
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 filetype plugin on
 

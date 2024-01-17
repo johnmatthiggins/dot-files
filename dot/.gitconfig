@@ -21,13 +21,13 @@
     br = branch
     wt = worktree
 
-[commit]
-    gpgsign = true
+; [commit]
+;     gpgsign = true
 
 [user]
     email = johnmatthiggins@gmail.com
     name = John Higgins
-    signingkey = 7F27515FB026D948CE2BE7F5192DF5D301BD714C
+    ; signingkey = 7F27515FB026D948CE2BE7F5192DF5D301BD714C
 
 [credential "https://github.com"]
     helper = 
