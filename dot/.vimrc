@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=light
+set background=dark
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -64,19 +64,23 @@ set listchars=eol:¬,tab:--
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
 call plug#begin()
 
+Plug 'prettier/vim-prettier'
 Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'VundleVim/Vundle.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-vinegar'
+Plug 'fatih/vim-go'
+Plug 'evanleck/vim-svelte'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 filetype plugin indent on
 filetype plugin on
+
+let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv)'
 
 colorscheme default
