@@ -49,6 +49,7 @@ set backspace=2
 set shell=/bin/zsh
 " set number
 set relativenumber
+set number
 set autoindent
 set tabstop=8 
 set softtabstop=0
