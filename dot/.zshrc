@@ -40,7 +40,8 @@ else
 ""%{$(printf '\e[32m')%}~>""%{$(printf '\e[0m')%} ";
 fi
 
-export PATH="$PATH:/home/jhiggins/.local/share/coursier/bin"
+export PATH="$PATH:/home/jhiggins/.local/share/coursier/bin:$HOME/go/bin"
+export GOPATH="$HOME/go/"
 
 if [[ -f ~/.env ]]; then
     source ~/.env
