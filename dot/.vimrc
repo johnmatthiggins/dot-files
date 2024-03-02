@@ -68,6 +68,7 @@ filetype off                  " required
 call plug#begin()
 
 Plug 'prettier/vim-prettier'
+Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'VundleVim/Vundle.vim'
@@ -77,6 +78,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'fatih/vim-go'
 Plug 'evanleck/vim-svelte'
 Plug 'pangloss/vim-javascript'
+Plug 'bronson/vim-trailing-whitespace'
 
 call plug#end()
 filetype plugin indent on
@@ -84,4 +86,19 @@ filetype plugin on
 
 let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv)'
 
-colorscheme default
+fun! FormatCode()
+    const ext = expand('%:e')
+    if ext == "svelte" || ext == "jsx" || ext == "js"
+        echo "Running Prettier..."
+        :Prettier
+    elseif ext == "go"
+        :! go fmt %
+    else
+        echo "File format not recognized..."
+    endif
+endfunction
+
+nnoremap <C-f> :call FormatCode()<CR>
+nnoremap <C-e> :NERDTreeToggle<CR>
+
+colorscheme retrobox
