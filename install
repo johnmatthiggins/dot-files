@@ -58,7 +58,6 @@ class Logger:
     def __init__(self):
         pass
 
-    
     def log(self, level, msg):
         print('%s ' %(self.level_ansi(level)), end='')
         print(msg)
