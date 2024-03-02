@@ -8,8 +8,8 @@ runtime! debian.vim
 " let g:skip_defaults_vim = 1
 
 " Uncomment the next line to make Vim more Vi-compatible
-" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous 
-" options, so any other options should be set AFTER setting 'compatible'.  
+" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
+" options, so any other options should be set AFTER setting 'compatible'.
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
 if has("syntax")
@@ -32,11 +32,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set incsearch		" Incremental search
-"set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
-"set autowrite		" Automatically save before commands like :next and :make
-"set hidden		" Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -44,17 +39,16 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 command Dspace %s/\s\+$//e
-
 set backspace=2
 set shell=/bin/zsh
-" set number
+set number
 set relativenumber
 set number
 set autoindent
-set tabstop=8 
+set tabstop=8
 set softtabstop=0
 set expandtab
-set shiftwidth=4 
+set shiftwidth=4
 set smarttab
 set nowrap
 set tags=.tags
@@ -62,8 +56,8 @@ set tags=.tags
 set list
 set listchars=eol:¬,tab:--
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 
 call plug#begin()
 
@@ -85,6 +79,7 @@ filetype plugin indent on
 filetype plugin on
 
 let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv)'
+let g:NERDTreeShowHidden = 1
 
 fun! FormatCode()
     const ext = expand('%:e')
