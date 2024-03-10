@@ -41,9 +41,10 @@ endif
 command Dspace %s/\s\+$//e
 set backspace=2
 set shell=/bin/zsh
+
 set number
 set relativenumber
-set number
+
 set autoindent
 set tabstop=8
 set softtabstop=0
@@ -61,18 +62,18 @@ filetype off
 
 call plug#begin()
 
-Plug 'prettier/vim-prettier'
-Plug 'preservim/nerdtree'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'evanleck/vim-svelte'
+Plug 'fatih/vim-go'
 Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'VundleVim/Vundle.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-vinegar'
-Plug 'fatih/vim-go'
-Plug 'evanleck/vim-svelte'
 Plug 'pangloss/vim-javascript'
-Plug 'bronson/vim-trailing-whitespace'
+Plug 'preservim/nerdtree'
+Plug 'prettier/vim-prettier'
+Plug 'romgrk/doom-one.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
 filetype plugin indent on
@@ -95,5 +96,7 @@ endfunction
 
 nnoremap <C-f> :call FormatCode()<CR>
 nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-t> :tabnew<CR>
 
-colorscheme retrobox
+set termguicolors
+colorscheme doom-one
