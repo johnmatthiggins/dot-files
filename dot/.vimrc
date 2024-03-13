@@ -79,7 +79,7 @@ call plug#end()
 filetype plugin indent on
 filetype plugin on
 
-let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv)'
+let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv|client\/node_modules)'
 let g:NERDTreeShowHidden = 1
 
 fun! FormatCode()
@@ -97,6 +97,11 @@ endfunction
 nnoremap <C-f> :call FormatCode()<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabnew<CR>
+
+nnoremap <C-g><C-s> :Git status<CR>
+nnoremap <C-g><C-m> :Git commit %<CR>
+nnoremap <C-g><C-l> :Git log<CR>
+nnoremap <C-g><C-b> :Git blame<CR>
 
 set termguicolors
 colorscheme doom-one
