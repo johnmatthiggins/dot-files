@@ -95,7 +95,7 @@ fun! FormatCode()
 endfunction
 
 nnoremap <C-f> :call FormatCode()<CR>
-nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabnew<CR>
 
 set termguicolors
