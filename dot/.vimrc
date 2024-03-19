@@ -38,7 +38,6 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-command Dspace %s/\s\+$//e
 set backspace=2
 set shell=/bin/zsh
 
@@ -80,6 +79,7 @@ filetype plugin indent on
 filetype plugin on
 
 let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv|client\/node_modules)'
+let g:ctrlp_show_hidden = 1
 let g:NERDTreeShowHidden = 1
 
 fun! FormatCode()

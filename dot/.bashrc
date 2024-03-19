@@ -22,3 +22,4 @@ PATH="$HOME/.local/bin:$PATH"
 export EDITOR='vi'
 
 . "$HOME/.cargo/env"
+export PS1='[\u@\h \W]\\$ ';
