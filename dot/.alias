@@ -6,7 +6,7 @@ alias dn='dotnet'
 alias zyp='sudo zypper'
 alias tabvi='vim -p'
 alias tabvim='vim -p'
-alias v='vim $(fzf)'
 alias vzf='vim $(fzf)'
+alias nv='nvim'
 
 alias venv='python3 -m venv'

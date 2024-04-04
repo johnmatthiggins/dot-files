@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=dark
+set background=light
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -41,14 +41,21 @@ endif
 set backspace=2
 set shell=/bin/zsh
 
-set number
 set relativenumber
 
+let ext = expand('%:e')
+
+if ext == "templ" || ext == "go"
+    set tabstop=2
+    set shiftwidth=8
+else
+    set tabstop=4
+    set shiftwidth=8
+endif
+
 set autoindent
-set tabstop=8
 set softtabstop=0
 set expandtab
-set shiftwidth=4
 set smarttab
 set nowrap
 set tags=.tags
@@ -89,6 +96,9 @@ fun! FormatCode()
         :Prettier
     elseif ext == "go"
         :! go fmt %
+    elseif ext == "templ"
+        echo "Running templ format"
+        :! templ fmt %
     else
         echo "File format not recognized..."
     endif
@@ -100,8 +110,9 @@ nnoremap <C-t> :tabnew<CR>
 
 nnoremap <C-g><C-s> :Git status<CR>
 nnoremap <C-g><C-m> :Git commit %<CR>
+nnoremap <C-g><C-d> :Git diff %<CR>
 nnoremap <C-g><C-l> :Git log<CR>
 nnoremap <C-g><C-b> :Git blame<CR>
 
 set termguicolors
-colorscheme doom-one
+colorscheme peachpuff

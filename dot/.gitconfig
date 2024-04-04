@@ -1,3 +1,6 @@
+[protocol]
+        version = 2
+
 [push]
     autoSetupRemote = true
 

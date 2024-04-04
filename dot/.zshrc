@@ -48,6 +48,6 @@ if [[ -f ~/.alias ]]; then
     source ~/.alias
 fi
 
-if test -f $(which cowsay) && test -f $(which fortune); then
-    fortune | cowsay
+if test -f $(which cowthink) && test -f $(which fortune); then
+    fortune | cowthink
 fi
