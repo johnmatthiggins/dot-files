@@ -10,3 +10,4 @@ alias vzf='vim $(fzf)'
 alias nv='nvim'
 
 alias venv='python3 -m venv'
+alias kb='kubectl'
