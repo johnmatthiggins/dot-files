@@ -2,39 +2,41 @@
         version = 2
 
 [push]
-    autoSetupRemote = true
+        autoSetupRemote = true
 
 [core]
-    editor = vim
+        editor = vim
+        excludesFile = ~/.gitignore
 
 
 [diff]
-    tool = vimdiff
+        tool = vimdiff
 
 [pull]
-    rebase = false
+        rebase = false
 
 [merge]
-    tool = vimdiff
+        tool = vimdiff
 
 [alias]
-    st = status
-    ci = commit
-    co = checkout
-    br = branch
-    wt = worktree
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+        wt = worktree
 
 ; [commit]
 ;     gpgsign = true
 
 [user]
-    email = johnmatthiggins@gmail.com
-    name = John Higgins
+        email = johnmatthiggins@gmail.com
+        name = John Higgins
     ; signingkey = 7F27515FB026D948CE2BE7F5192DF5D301BD714C
 
 [credential "https://github.com"]
-    helper = 
-    helper = !/usr/bin/gh auth git-credential
+        helper =
+        helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-    helper = 
-    helper = !/usr/bin/gh auth git-credential
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+

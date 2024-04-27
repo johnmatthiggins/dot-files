@@ -22,7 +22,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-set background=light
+set background=dark
 let &t_ut=''
 
 " Uncomment the following to have Vim jump to the last position when
@@ -80,12 +80,18 @@ Plug 'romgrk/doom-one.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-vinegar'
+Plug 'vim-scripts/django.vim'
+Plug 'lepture/vim-jinja'
+Plug 'mhinz/vim-startify'
 
 call plug#end()
 filetype plugin indent on
 filetype plugin on
 
-let g:ctrlp_custom_ignore = '^(\.git|node_modules|venv|client\/node_modules)'
+autocmd BufNewFile,BufRead *.django.html :set filetype=htmldjango
+autocmd BufNewFile,BufRead *.jinja.html :set filetype=jinja
+
+let g:ctrlp_custom_ignore = '^(\.git|node_modules|\.venv|client\/node_modules)'
 let g:ctrlp_show_hidden = 1
 let g:NERDTreeShowHidden = 1
 
@@ -115,4 +121,4 @@ nnoremap <C-g><C-l> :Git log<CR>
 nnoremap <C-g><C-b> :Git blame<CR>
 
 set termguicolors
-colorscheme peachpuff
+colorscheme retrobox
