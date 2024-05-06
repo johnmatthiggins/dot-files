@@ -28,6 +28,10 @@ function ssh_host {
     fi
 }
 
+function tar_dir {
+        tar -czf $1.gz $1;
+}
+
 local dir='$(pwd_tilde)'
 local day_time='$(date +%R)'
 local host_name='$(ssh_host)'

@@ -110,6 +110,8 @@ fun! FormatCode()
     endif
 endfunction
 
+let mapleader = "\<Space>"
+
 nnoremap <C-f> :call FormatCode()<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabnew<CR>
@@ -119,6 +121,10 @@ nnoremap <C-g><C-m> :Git commit %<CR>
 nnoremap <C-g><C-d> :Git diff %<CR>
 nnoremap <C-g><C-l> :Git log<CR>
 nnoremap <C-g><C-b> :Git blame<CR>
+
+nnoremap <leader>bn :bnext<CR>
+nnoremap <leader>bp :bprev<CR>
+nnoremap <leader>bl :buffers<CR>
 
 set termguicolors
 colorscheme retrobox
