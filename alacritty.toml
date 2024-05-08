@@ -3,7 +3,7 @@ family = "Comic Code"
 style = "Regular"
 
 [font]
-size = 15.0
+size = 16.0
 
 [font.offset]
 x = 0
