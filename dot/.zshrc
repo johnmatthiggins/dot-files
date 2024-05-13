@@ -52,6 +52,6 @@ if [[ -f ~/.alias ]]; then
     source ~/.alias
 fi
 
-if test -f $(which cowthink) && test -f $(which fortune); then
-    fortune | cowthink
+if test -f "$(which pokemonsay)" && test -f "$(which fortune)"; then
+    fortune | pokemonsay --pokemon Nidoking --no-name
 fi
