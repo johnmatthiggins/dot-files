@@ -5,8 +5,8 @@
         autoSetupRemote = true
 
 [core]
-        editor = vim
-        excludesFile = ~/.gitignore
+        editor = nvim
+	excludesFile = /Users/jhiggins/.gitignore
 
 
 [diff]
@@ -17,6 +17,7 @@
 
 [merge]
         tool = vimdiff
+	rebase = true
 
 [alias]
         st = status

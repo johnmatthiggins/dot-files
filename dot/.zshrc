@@ -53,5 +53,13 @@ if [[ -f ~/.alias ]]; then
 fi
 
 if test -f "$(which pokemonsay)" && test -f "$(which fortune)"; then
-    fortune | pokemonsay --pokemon Nidoking --no-name
+    fortune | pokemonsay --pokemon Rhydon --no-name
+fi
+
+# Created by `pipx` on 2024-07-20 04:22:25
+export PATH="$PATH:/Users/jhiggins/.local/bin:$HOME/scripts/"
+
+if [[ -f ~/.zfunc ]]; then
+    fpath+=~/.zfunc
+    autoload -Uz compinit && compinit
 fi
