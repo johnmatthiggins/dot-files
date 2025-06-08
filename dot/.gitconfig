@@ -5,7 +5,7 @@
         autoSetupRemote = true
 
 [core]
-        editor = nvim
+        editor = vim
 	excludesFile = /Users/jhiggins/.gitignore
 
 

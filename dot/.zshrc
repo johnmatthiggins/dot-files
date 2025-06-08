@@ -63,3 +63,21 @@ if [[ -f ~/.zfunc ]]; then
     fpath+=~/.zfunc
     autoload -Uz compinit && compinit
 fi
+
+. "$HOME/.local/bin/env"
+
+source $HOME/.local/bin/env
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+# fnm
+FNM_PATH="/home/jhiggins/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/jhiggins/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+export TERM="xterm-256color";
+export PATH=$PATH:/usr/local/go/bin
